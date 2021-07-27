@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://img.icons8.com/ios/50/000000/database.png');
+    background-size: cover;
+  }
