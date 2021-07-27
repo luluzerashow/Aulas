@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
 
   }
 
-  Logar(user: string,$window) {
+  Logar(user: string) {
     console.log("inicia loop");
     // trazendo apenas a parte de usuarios
     var lista = this.listausuarios["usuarios"];
@@ -66,7 +66,6 @@ export class LoginComponent implements OnInit {
       //Navegando para outra pagina
         var url = location.href;
         // window.location.href = url +  "dashboard";
-        $window.location.href = '/dashboard.html';
     }else{
       console.log("Usuario não encontrado");
       var title = 'Usuário não Cadastrado';

@@ -22,22 +22,20 @@ export class MasterpageComponent implements OnInit {
   constructor(private cookie:CookieService) { }
 
   ngOnInit(): void {
-    //  //trazendo o cookie e colocando em varaveis
-    //  this.cookieExists = this.cookie.check('UsuarioCookie');
-    //  if(this.cookieExists){
-    //    var dadoscookie = this.cookie.get('UsuarioCookie').split('-');
-    //    this.cookieId = dadoscookie[1];
-    //    this.cookieUser = dadoscookie[3];
-    //    this.cookieNome = dadoscookie[5];
-    //    this.cookiePerfilId = dadoscookie[7];
-    //    this.cookiePerfil = dadoscookie[9];
-    //  }else{
-    //    //Navegando para outra pagina
-    //    //Navegando para outra pagina
-    //    var url = location.href;
-    //    window.location.href = url +  "login";
-    //    window.location.href = 'http://localhost:4200/login';
-    //}
+     //trazendo o cookie e colocando em varaveis
+     this.cookieExists = this.cookie.check('UsuarioCookie');
+     if(this.cookieExists){
+       var dadoscookie = this.cookie.get('UsuarioCookie').split('-');
+       this.cookieId = dadoscookie[1];
+       this.cookieUser = dadoscookie[3];
+       this.cookieNome = dadoscookie[5];
+       this.cookiePerfilId = dadoscookie[7];
+       this.cookiePerfil = dadoscookie[9];
+     }else{
+       //Navegando para outra pagina
+       var url = location.href;
+       window.location.href = url +  "/login";
+    }
   }
 
 }

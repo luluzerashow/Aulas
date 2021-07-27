@@ -11,17 +11,17 @@ export class AppComponent implements OnInit {
   result: boolean = true;
 
   ngOnInit(){
-    // var url = "";
-    // url = window.location.href;
-    // const link1 = "http://localhost:4200/login";
-    // const link2 = "http://localhost:4200/";   
-    // if (url == link2) {
-    //   this.result = true;
-    // } else if(url == link1) {
-    //   this.result = true;
-    // }
-    // else{
-    //   this.result = false;
-    // }  
+    var url = "";
+    url = window.location.href;
+    const link1 = "https://luluaulas-luizrudokas.vercel.app/login";
+    const link2 = "hhttps://luluaulas-luizrudokas.vercel.app/";   
+    if (url == link2) {
+      this.result = true;
+    } else if(url == link1) {
+      this.result = true;
+    }
+    else{
+      this.result = false;
+    }  
   }
 }
