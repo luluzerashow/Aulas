@@ -65,7 +65,8 @@ export class LoginComponent implements OnInit {
       console.log("Usuario correto");
       //Navegando para outra pagina
         var url = location.href;
-        // window.location.href = url +  "dashboard";
+        console.log("direcionando para: " + url +  "dashboard");
+        window.location.href = url +  "dashboard";
     }else{
       console.log("Usuario não encontrado");
       var title = 'Usuário não Cadastrado';

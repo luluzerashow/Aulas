@@ -31,8 +31,11 @@ export class MasterpageComponent implements OnInit {
        this.cookieNome = dadoscookie[5];
        this.cookiePerfilId = dadoscookie[7];
        this.cookiePerfil = dadoscookie[9];
+
+       console.log("Existe cookie")
      }else{
        //Navegando para outra pagina
+       console.log("Não Existe cookie")
        var url = location.href;
        window.location.href = url +  "/login";
     }
