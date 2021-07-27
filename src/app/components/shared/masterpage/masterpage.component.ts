@@ -33,7 +33,10 @@ export class MasterpageComponent implements OnInit {
        this.cookiePerfil = dadoscookie[9];
      }else{
        //Navegando para outra pagina
-       window.location.href = 'http://localhost:4200/login';
+       //Navegando para outra pagina
+       var url = location.href;
+       window.location.href = url +  "login";
+      //  window.location.href = 'http://localhost:4200/login';
      }
   }
 
