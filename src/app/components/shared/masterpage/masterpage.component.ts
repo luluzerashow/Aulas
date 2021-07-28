@@ -25,19 +25,21 @@ export class MasterpageComponent implements OnInit {
      //trazendo o cookie e colocando em varaveis
      this.cookieExists = this.cookie.check('UsuarioCookie');
      if(this.cookieExists){
-       var dadoscookie = this.cookie.get('UsuarioCookie').split('-');
-       this.cookieId = dadoscookie[1];
-       this.cookieUser = dadoscookie[3];
-       this.cookieNome = dadoscookie[5];
-       this.cookiePerfilId = dadoscookie[7];
-       this.cookiePerfil = dadoscookie[9];
+      //  var dadoscookie = this.cookie.get('UsuarioCookie').split('-');
+      //  this.cookieId = dadoscookie[1];
+      //  this.cookieUser = dadoscookie[3];
+      //  this.cookieNome = dadoscookie[5];
+      //  this.cookiePerfilId = dadoscookie[7];
+      //  this.cookiePerfil = dadoscookie[9];
 
        console.log("Existe cookie")
      }else{
        //Navegando para outra pagina
        console.log("Não Existe cookie")
        var url = location.href;
-       window.location.href = url +  "/login";
+       console.log("vai redirecionar para: " + url +  "login");
+
+      //  window.location.href = url +  "login";
     }
   }
 
